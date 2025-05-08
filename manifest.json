@@ -1,0 +1,10 @@
+{
+  "id": "habitude",
+  "name": "Habitude",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Habitude is a powerful habit tracker that blends classic productivity with gamified motivation using a dedicated interface.",
+  "author": "Noah Boos AKA Rift",
+  "authorUrl": "https://github.com/NoahBoos",
+  "isDesktopOnly": false
+}
