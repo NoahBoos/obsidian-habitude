@@ -1,4 +1,5 @@
 import {ItemView, WorkspaceLeaf} from "obsidian";
+import Habitude from "../main";
 
 export const habitudeViewTypeHome = "habitude-view-home";
 
@@ -7,8 +8,11 @@ export const habitudeViewTypeHome = "habitude-view-home";
  * @extends ItemView
  */
 export class HomeView extends ItemView {
-    constructor(leaf: WorkspaceLeaf) {
+    plugin: Habitude;
+
+    constructor(leaf: WorkspaceLeaf, plugin: Habitude) {
         super(leaf);
+        this.plugin = plugin;
     }
 
     getViewType(): string {

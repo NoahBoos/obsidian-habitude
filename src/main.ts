@@ -13,7 +13,7 @@ export default class Habitude extends Plugin {
 
         this.registerView(
             habitudeViewTypeHome,
-            (leaf: WorkspaceLeaf) => new HomeView(leaf),
+            (leaf: WorkspaceLeaf) => new HomeView(leaf, this),
         )
 
         this.addCommand({
