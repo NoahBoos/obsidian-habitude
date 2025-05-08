@@ -1,4 +1,4 @@
-import {Plugin} from "obsidian";
+import {Plugin, WorkspaceLeaf} from "obsidian";
 import {DEFAULT_SETTINGS, HabitudeSettings, HabitudeSettingsTab} from "./HabitudeSettingsTab";
 import {habitudeViewTypeHome, HomeView} from "./windows/HomeView";
 import {ActivateView} from "./utils";
@@ -13,7 +13,7 @@ export default class Habitude extends Plugin {
 
         this.registerView(
             habitudeViewTypeHome,
-            (leaf) => new HomeView(leaf),
+            (leaf: WorkspaceLeaf) => new HomeView(leaf),
         )
 
         this.addCommand({
