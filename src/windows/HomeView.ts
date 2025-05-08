@@ -21,7 +21,11 @@ export class HomeView extends ItemView {
     }
 
     getDisplayText(): string {
-        return "";
+        return "Habitudes";
+    }
+
+    getIcon(): string {
+        return "book";
     }
 
     async onOpen() {
