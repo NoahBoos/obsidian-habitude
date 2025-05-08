@@ -1,6 +1,7 @@
 import {Plugin} from "obsidian";
 import {DEFAULT_SETTINGS, HabitudeSettings, HabitudeSettingsTab} from "./HabitudeSettingsTab";
 import {habitudeViewTypeHome, HomeView} from "./windows/HomeView";
+import {ActivateView} from "./utils";
 
 export default class Habitude extends Plugin {
     settings: HabitudeSettings;
@@ -14,6 +15,14 @@ export default class Habitude extends Plugin {
             habitudeViewTypeHome,
             (leaf) => new HomeView(leaf),
         )
+
+        this.addCommand({
+            id: "habitude-home",
+            name: "Home",
+            callback: () => {
+                ActivateView(habitudeViewTypeHome);
+            }
+        });
     }
 
     async onunload() {
