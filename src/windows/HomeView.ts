@@ -1,4 +1,5 @@
 import {ItemView, WorkspaceLeaf} from "obsidian";
+import {AddContainer, AddTitle} from "../utils";
 import Habitude from "../main";
 
 export const habitudeViewTypeHome = "habitude-view-home";
@@ -30,6 +31,10 @@ export class HomeView extends ItemView {
          */
         const container: Element = this.containerEl.children[1];
         container.empty();
+
+        const header: HTMLDivElement = AddContainer(container);
+        const main: HTMLDivElement = AddContainer(container);
+        const footer: HTMLDivElement = AddContainer(container);
     }
 
     async onClose() {
