@@ -7,7 +7,7 @@ import {App, WorkspaceLeaf} from "obsidian";
  * @param {string[]} classes - An array of strings containing CSS classes to add to the created element.
  * @return {HTMLDivElement} createdEl - The created container.
  */
-export function AddContainer(parent: HTMLElement, classes: string[] = []): HTMLDivElement {
+export function AddContainer(parent: HTMLElement | Element, classes: string[] = []): HTMLDivElement {
     /**
      * @remarks
      * Pushes into classes all CSS classes that are mandatory for a container.
@@ -39,8 +39,8 @@ export function AddTitle(parent: HTMLElement, title: string, classes: string[] =
      * Pushes into classes all CSS classes that are mandatory for a container.
      */
     classes.push(
-        "templaterSelectorModal__h1--margin",
-        "templaterSelectorModal__h1--text-align"
+        "habitudeView__h1--margin",
+        "habitudeView__h1--text-align"
     );
     /**
      * @type {HTMLElement} createdEl
@@ -69,7 +69,7 @@ export function AddSubtitle(parent: HTMLElement, subtitle: string, classes: stri
      * Pushes into classes all CSS classes that are mandatory for a container.
      */
     classes.push(
-        "templaterSelectorModal__h2--fit-content"
+        "habitudeView__h2--fit-content"
     );
     /**
      * @type {HTMLElement} createdEl
@@ -98,7 +98,7 @@ export function AddParagraph(parent: HTMLElement, text: string, classes: string[
      * Pushes into classes all CSS classes that are mandatory for a container.
      */
     classes.push(
-        "templaterSelectorModal__paragraph--text-align"
+        "habitudeView__paragraph--text-align"
     );
     /**
      * @type {HTMLElement} createdEl
@@ -127,7 +127,7 @@ export function AddDropdown(parent: HTMLElement, defaultString: string, classes:
      * Pushes into classes all CSS classes that are mandatory for a container.
      */
     classes.push(
-        "templaterSelectorModal__dropdown--default-width"
+        "habitudeView__dropdown--default-width"
     )
     /**
      * @type {DropdownComponent} createdEl
@@ -204,7 +204,7 @@ export function AddInput(parent: HTMLElement, type: string, placeholder: string 
      * Pushes into classes all CSS classes that are mandatory for a container.
      */
     classes.push(
-        "templaterSelectorModal__input--default-width"
+        "habitudeView__input--default-width"
     );
     /**
      * @type {HTMLInputElement} createdEl
@@ -250,9 +250,9 @@ export function AddButton(parent: HTMLElement, text: string = null, icon: string
      * Pushes into classes all CSS classes that are mandatory for a container.
      */
     classes.push(
-        "templaterSelectorModal__button--default-width",
-        "templaterSelectorModal__button--default-margin",
-        "templaterSelectorModal__button--default-padding"
+        "habitudeView__button--default-width",
+        "habitudeView__button--default-margin",
+        "habitudeView__button--default-padding"
     );
     /**
      * @type {ButtonComponent} createdEl

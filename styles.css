@@ -1,0 +1,86 @@
+.habitudeView__h1--margin {
+    margin-top: 0;
+}
+
+.habitudeView__h1--text-align {
+    text-align: center;
+}
+
+.habitudeView__h2--fit-content {
+    width: fit-content;
+}
+
+.habitudeView__inputContainer--flex,
+.habitudeView__dropdownContainer--flex {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.habitudeView__input--default-width {
+    width: 100%;
+}
+
+.habitudeView__input--field-sizing-content {
+    field-sizing: content;
+}
+
+.habitudeView__dropdown--default-width {
+    width: 100%;
+}
+
+.habitudeView__button--default-width {
+    width: 40%;
+}
+
+.habitudeView__button--default-margin {
+    margin: 16px 30% 0;
+}
+
+.habitudeView__button--default-padding {
+    padding: 4px 0;
+}
+
+.habitudeView__paragraph--text-align {
+    text-align: center;
+}
+
+.habitudeView__container--flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.habitudeView__container--flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.habitudeView__container--flex-align-center {
+    align-items: center;
+}
+
+.habitudeView__container--flex-justify-space-between {
+    justify-content: space-between;
+}
+
+.habitudeView__container--width-fit-content {
+    width: fit-content;
+}
+
+.habitudeView__container--flex-wrap {
+    flex-wrap: wrap;
+}
+
+.habitudeView__container--gap-16px {
+    gap: 16px;
+}
+
+.habitudeView__deleteInputButton--border {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.habitudeView__icon--color-red svg {
+    color: var(--color-red);
+}
