@@ -33,6 +33,13 @@ export class HomeView extends ItemView {
         container.empty();
 
         const header: HTMLDivElement = AddContainer(container);
+        let headerTitle: string;
+        if (this.plugin.settings.username === "Username") {
+            headerTitle = "Welcome to your habits panel."
+        } else {
+            headerTitle = "Welcome to your habits panel, " + this.plugin.settings.username;
+        }
+        AddTitle(header, headerTitle);
         const main: HTMLDivElement = AddContainer(container);
         const footer: HTMLDivElement = AddContainer(container);
     }
