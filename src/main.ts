@@ -1,5 +1,6 @@
 import {Plugin} from "obsidian";
 import {DEFAULT_SETTINGS, HabitudeSettings, HabitudeSettingsTab} from "./HabitudeSettingsTab";
+import {habitudeViewTypeHome, HomeView} from "./windows/HomeView";
 
 export default class Habitude extends Plugin {
     settings: HabitudeSettings;
@@ -8,6 +9,11 @@ export default class Habitude extends Plugin {
         await this.loadSettings();
 
         this.addSettingTab(new HabitudeSettingsTab(this.app, this));
+
+        this.registerView(
+            habitudeViewTypeHome,
+            (leaf) => new HomeView(leaf),
+        )
     }
 
     async onunload() {
